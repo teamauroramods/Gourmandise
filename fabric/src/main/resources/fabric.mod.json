@@ -3,27 +3,33 @@
   "id": "${id}",
   "version": "${version}",
   "name": "${name}",
-  "description": "This is an example starter template.",
-  "authors": [ "Moonflower" ],
-  "contributors": [ "An author", "Another author", "The last author" ],
+  "description": "@everyone grape",
+  "authors": [ "Team Aurora" ],
+  "contributors": [ "" ],
   "contact": {
-    "homepage": "https://www.moonflower.gg",
-	"issues": "https://github.com/MoonflowerTeam/${repo}/issues",
-    "sources": "https://github.com/MoonflowerTeam/${repo}/"
+    "homepage": "https://discord.gg/VzXSCFp",
+    "issues": "https://github.com/teamauroramods/Gourmandise/issues",
+    "sources": "https://github.com/teamauroramods/Gourmandise/"
   },
   "license": "GPLv3",
+  "icon": "icon.png",
   "environment": "*",
+  "accessWidener" : "${id}.accesswidener",
+  "mixins": [
+    "${id}-common.mixins.json",
+    "${id}.mixins.json"
+  ],
   "entrypoints": {
     "main": [
-      "gg.moonflower.starter.core.fabric.StarterFabric"
+      "com.teamaurora.abundance.core.fabric.GourmandiseFabric"
     ],
     "fabric-datagen": [
-      "gg.moonflower.starter.core.fabric.StarterFabricDatagen"
+      "com.teamaurora.abundance.core.fabric.GourmandiseFabricDatagen"
     ]
   },
   "depends": {
     "fabric": "*",
     "minecraft": "1.18.x",
-    "pollen": "1.0.0"
+    "pollen": ">=1.2.0 <2.0.0"
   }
 }
