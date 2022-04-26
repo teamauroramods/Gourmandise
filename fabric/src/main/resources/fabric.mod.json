@@ -21,10 +21,10 @@
   ],
   "entrypoints": {
     "main": [
-      "com.teamaurora.abundance.core.fabric.GourmandiseFabric"
+      "com.teamaurora.gourmandise.core.fabric.GourmandiseFabric"
     ],
     "fabric-datagen": [
-      "com.teamaurora.abundance.core.fabric.GourmandiseFabricDatagen"
+      "com.teamaurora.gourmandise.core.fabric.GourmandiseFabricDatagen"
     ]
   },
   "depends": {
