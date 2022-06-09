@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.FireBlock;
 import net.minecraft.world.level.block.LayeredCauldronBlock;
 
 public class Gourmandise {
-    public static final String MOD_ID = "starter";
+    public static final String MOD_ID = "gourmandise";
     public static final Platform PLATFORM = Platform.builder(MOD_ID)
             .clientInit(Gourmandise::onClientInit)
             .clientPostInit(Gourmandise::onClientPostInit)
@@ -86,6 +86,7 @@ public class Gourmandise {
 
             /* Cauldron Interactions */
             CauldronInteraction.addDefaultInteractions(MilkCauldronBlock.MILK);
+            MilkCauldronBlock.MILK.put(Items.MILK_BUCKET, MilkCauldronBlock.FILL_MILK);
             MilkCauldronBlock.MILK.put(Items.BUCKET, (blockState, level, blockPos, player, interactionHand, itemStack) ->
                     CauldronInteraction.fillBucket(blockState, level, blockPos, player, interactionHand, itemStack, new ItemStack(Items.MILK_BUCKET),
                             (blockStatex) -> blockStatex.getValue(LayeredCauldronBlock.LEVEL) == 3, SoundEvents.BUCKET_FILL));

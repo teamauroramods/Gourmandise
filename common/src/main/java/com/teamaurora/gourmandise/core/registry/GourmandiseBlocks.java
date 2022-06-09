@@ -88,6 +88,7 @@ public class GourmandiseBlocks {
 
     public static final Supplier<Block> MILK_CAULDRON = registerBlock("milk_cauldron", ()-> new LayeredCauldronBlock(Properties.CAULDRON, Objects::isNull, CauldronInteraction.WATER), new Item.Properties().tab(CreativeModeTab.TAB_BREWING));
     public static final Supplier<Block> CHEESE_CAULDRON = registerBlock("cheese_cauldron", ()-> new Block(Properties.CAULDRON), new Item.Properties().tab(CreativeModeTab.TAB_BREWING));
+
     /* Golden Wheat */
 
     public static final Supplier<Block> GOLDEN_HAY_BLOCK = registerBlock("golden_hay_block", ()-> new HayBlock(Properties.HAY), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS));
